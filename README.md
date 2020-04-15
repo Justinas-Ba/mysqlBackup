@@ -32,6 +32,9 @@ From command line shell launch script using parameters:
     "python backup.py --action start --upload"
     or 
     "python backup.py --action start"
+    
+    Launc script in silent mode:
+    "python backup.py --action start &"
 
 # Help page:
 
