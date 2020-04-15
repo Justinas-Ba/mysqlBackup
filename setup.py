@@ -7,7 +7,6 @@ setup(name = 'mysqlbackups',
     author = 'Justinas',
     author_email = 'justas147@gmail.com',
     url = 'https://github.com/Justinas-Ba/mysqlBackup.git',
-    packages = ['mysqlbackup'],
     install_requires = [
         'boto3',
         'cryptography'],
