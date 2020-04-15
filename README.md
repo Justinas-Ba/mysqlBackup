@@ -1,12 +1,16 @@
 # mysql database backup script
-# Purpose: Script to perform mysql backup
+# Purpose and description 
 
-This is python script to perform mysql backup.
+This is python script to perform mysql backup and upload to S3 storage.
 It uses mysqldump utility, and backups up all databases.
-After backup is done it can be encrypted and  uploaded to Amazon S3 storage.
+After backup is done it can be encrypted and uploaded to Amazon S3 storage.
+Note: please see flags
 
-Since script uses msyqldump utility make sure mysql binaries are added to OS Path.
+Since script uses msyqldump utility make sure mysql binaries are available and added to OS Path.
 If not, please create symbolic links.
+
+You can call this script from any server which has mysqldump utility and direct connection
+to mysql database server on default TCP port 3306.
 
 Copy python script backup.py and configuration files (credentials.json, inputParameters.json)
 to working directory. Please modify configuration files according to you setup and requirements.
@@ -17,9 +21,26 @@ Since connection keys, user, password are used in credentials.json file please r
 file only to dedicated user or groups.
 It is strongly recommended to run this script using dedicated service user.
 
-# How to install dependencies
+# Mysql setup
 
-This scirpt uses libraries that are not included in Python standard package.
+Please follow mysql user guide how to setup dedicatedbackup user and grant relevant credentials.
+Please allow connections on TCP port 3306.
+Please update input .json files accordingly
+
+# How to install script
+
+    1. Download packages and extract to working directory
+    1.1*. It is also possible to use git clone:
+        git clone https://github.com/Justinas-Ba/mysqlBackup.gi
+    2. change directory to working directory.
+    3. Since setup.py file is prepared you can install script using pip:
+        pip install .
+    4. This will install required libraries
+    5. You can now run backup script
+
+# How to install dependencies manually
+
+This scirpt uses libraries that are not included in Python standard library.
 Please install libraries using pip:
 
     "pip install boto3"
