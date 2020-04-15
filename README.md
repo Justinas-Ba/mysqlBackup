@@ -71,7 +71,7 @@ From command line shell launch script using parameters:
     "python mysqlbackup.py --action start --upload"
 
 3. How to stop backup:
-    "python backup.py --action stop"
+    "python mysqlbackup.py --action stop"
 
 usage: mysqlbackup.py [-h] [--cfg CFG] [--creds CREDS] [--upload] --action
                  {start,stop,progress}
