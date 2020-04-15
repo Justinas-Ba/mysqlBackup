@@ -32,7 +32,7 @@ Please update input .json files accordingly
     1. Download packages and extract to working directory
      - It is also possible to use git clone:
         
-        git clone https://github.com/Justinas-Ba/mysqlBackup.gi
+        git clone https://github.com/Justinas-Ba/mysqlBackup.git
     
     2. change directory to working directory.
     3. Since setup.py file is prepared you can install script using pip:
