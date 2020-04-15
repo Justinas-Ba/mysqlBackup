@@ -18,8 +18,9 @@ file only to dedicated user or groups.
 It is strongly recommended to run this script using dedicated service user.
 
 # How to install dependencies
-    This scirpt uses libraries that are not included in Python standard package.
-    Please install libraries using pip:
+
+This scirpt uses libraries that are not included in Python standard package.
+Please install libraries using pip:
 
     "pip install boto3"
     "pip install cryptography"
@@ -28,9 +29,9 @@ It is strongly recommended to run this script using dedicated service user.
 
 From command line shell launch script using parameters:
 
-"python backup.py --action start --upload"
-or 
-"python backup.py --action start"
+    "python backup.py --action start --upload"
+    or 
+    "python backup.py --action start"
 
 # Help page:
 
