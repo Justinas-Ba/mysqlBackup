@@ -54,21 +54,21 @@ Please install libraries using pip:
 
 From command line shell launch script using parameters:
 
-    "python backup.py --action start --upload"
+    "python mysqlbackup.py --action start --upload"
     or 
-    "python backup.py --action start"
+    "python mysqlbackup.py --action start"
     
     Launc script in silent mode:
-    "python backup.py --action start &"
+    "python mysqlbackup.py --action start &"
 
 # Help page:
 
 1. How to make backup:
     This is command line script. Please execute it from shell console:
-    "python backup.py --action start"
+    "python mysqlbackup.py --action start"
 
 2. How to upload backup to cloud:
-    "python backup.py --action start --upload"
+    "python mysqlbackup.py --action start --upload"
 
 3. How to stop backup:
     "python backup.py --action stop"
