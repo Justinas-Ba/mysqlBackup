@@ -1,5 +1,5 @@
-# mysqlBackup
-Purpose: Script to perform mysql backup
+# mysqlBackup script
+# Purpose: Script to perform mysql backup
 
 This is python script to perform mysql backup.
 It uses mysqldump utility, and backups up all databases.
@@ -11,13 +11,13 @@ If not, please create symbolic links.
 Copy python script backup.py and configuration files (credentials.json, inputParameters.json)
 to working directory. Please modify configuration files according to you setup and requirements.
 
-Security:
+# Security:
 
 Since connection keys, user, password are used in credentials.json file please restrict access to this
 file only to dedicated user or groups.
 It is strongly recommended to run this script using dedicated service user.
 
-How to use script:
+# How to use script:
 
 From command line shell launch script using parameters:
 
@@ -25,7 +25,7 @@ From command line shell launch script using parameters:
 or 
 "python backup.py --action start"
 
-Help page:
+# Help page:
 
 1. How to make backup:
     This is command line script. Please execute it from shell console:
