@@ -1,4 +1,4 @@
-# mysqlBackup script
+# mySQL database backup script
 # Purpose: Script to perform mysql backup
 
 This is python script to perform mysql backup.
