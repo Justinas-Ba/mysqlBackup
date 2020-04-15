@@ -1,0 +1,8 @@
+{
+    "mysqlHost" : "localhost",
+    "BackupAlldatabases": "True",
+    "OutputLocation": "/home",
+    "backupCopiesRetention" : "3",
+    "S3Host": "localhost:27015"
+
+}

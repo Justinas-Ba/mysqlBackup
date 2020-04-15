@@ -1,0 +1,24 @@
+*********************************************
+Welcome to Mysql Backup tool Help page
+*********************************************
+Description:
+This is Mysql backup script. It uses mysqldump utility to perform backup.
+After backup is made it can be encrypted and  uploaded to S3 cloud. 
+Please use --upload flag to make backup and upload to S3 Amazon storage.
+
+1. How to make backup:
+    This is command line script. Please execute it from shell console:
+    "python backup.py --action start"
+
+2. How to upload backup to cloud:
+    "python backup.py --action start --upload"
+
+3. How to stop backup:
+    "python backup.py --action stop"
+
+4. How to install dependencies
+    This scirpt uses libraries that are not included in Python standard package.
+    Please install libraries using pip:
+    
+    "pip install boto3"
+    "pip install cryptography"
