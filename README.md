@@ -1,5 +1,5 @@
 # mysqlBackup
-Script to perform mysql backup
+Purpose: Script to perform mysql backup
 
 This is python script to perform mysql backup.
 It uses mysqldump utility, and backups up all databases.
