@@ -17,6 +17,13 @@ Since connection keys, user, password are used in credentials.json file please r
 file only to dedicated user or groups.
 It is strongly recommended to run this script using dedicated service user.
 
+# How to install dependencies
+    This scirpt uses libraries that are not included in Python standard package.
+    Please install libraries using pip:
+
+    "pip install boto3"
+    "pip install cryptography"
+
 # How to use script:
 
 From command line shell launch script using parameters:
@@ -36,13 +43,6 @@ or
 
 3. How to stop backup:
     "python backup.py --action stop"
-
-4. How to install dependencies
-    This scirpt uses libraries that are not included in Python standard package.
-    Please install libraries using pip:
-
-    "pip install boto3"
-    "pip install cryptography"
 
 usage: backup.py [-h] [--cfg CFG] [--creds CREDS] [--upload] --action
                  {start,stop,progress}
