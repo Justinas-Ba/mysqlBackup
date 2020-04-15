@@ -30,11 +30,15 @@ Please update input .json files accordingly
 # How to install script
 
     1. Download packages and extract to working directory
-    1.1*. It is also possible to use git clone:
+     - It is also possible to use git clone:
+        
         git clone https://github.com/Justinas-Ba/mysqlBackup.gi
+    
     2. change directory to working directory.
     3. Since setup.py file is prepared you can install script using pip:
+        
         pip install .
+    
     4. This will install required libraries
     5. You can now run backup script
 
